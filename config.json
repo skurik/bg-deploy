@@ -1,0 +1,23 @@
+{
+	"BlueSiteUrl": "http://192.168.1.33:8001",
+	"BlueIisAppPath": "serverBlue",
+	
+	"GreenSiteUrl": "http://192.168.1.33:8002",
+	"GreenIisAppPath": "serverGreen",
+
+	"UpStatusUrlPath": "/up.html",
+	"UpStatusPattern": "^up$",
+	"BuildInfoUrlPath": "/api/infrastructure/app-info",	
+	"MsBuildPath": "c:\\Program Files (x86)\\MSBuild\\14.0\\bin\\MSBuild.exe",
+	"BuildFilePath": "..\\..\\App.Site\\App.Site.csproj",
+	"BuildConfiguration": "Release",
+	"WaitBeforeCheckingUpdatedBuild": "270",
+
+	"TargetServer": "192.168.1.33:8172",
+	"DeployUserName": "WDeployAdmin",
+	"DeployUserPassword": "pass",
+	"WarmUpUrlPaths": [ "PUT /api/infrastructure/warmup" ],
+	"HealthStatusChangeUrlPath": "/api/infrastructure/health-status",
+	"HealthyPattern": "up",
+	"UnhealthyPattern": "down"
+}
