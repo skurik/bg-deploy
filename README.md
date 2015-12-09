@@ -29,7 +29,7 @@ This is the machine you will be deploying the project from. Typically the develo
 
 ### Web application
 
-* add `up.html` with the content `down` as a content file to your web application project. Make sure it is being deployed to IIS along with the rest of the application.
+* add `up.html` with the string `down` as its content to your web application project. Make sure it is being deployed to IIS along with the rest of the application.
 * add an endpoint to retrieve the application startup timestamp. The deployment script relies on that when checking whether the deployed application has already been loaded by IIS. It might be something like this:
 
 ```
@@ -89,7 +89,7 @@ public class HealthStatusApiController : ApiController
 
 ## Configuration
 
-The deployment script is passed a path to a JSON config file. A sample one is part of the repository, the options are explained below (the symmetrical ones are not repeated)
+The deployment script is passed a path to a JSON config file. A sample one is part of the repository, the options are explained below.
 
 
 | Option | Meaning |
