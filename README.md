@@ -2,7 +2,7 @@
 
 bg-deploy is a way to deploy VS projects to IIS without any downtime experience. The name originates from the related pattern of blue-green deployment, described for example [here](http://martinfowler.com/bliki/BlueGreenDeployment.html). 
 
-While the bg-deploy script does not assume anything about how the target IIS sites are managed, typically it will be used in conjunction with Application Request Routing (ARR) and Server Farms features of IIS and the following text assumes this scenario. For a description of how the IIS may be set up, see e.g. [this great StackOverflow answer](http://serverfault.com/questions/124274/zero-downtime-uploads-rollback-in-iis/126379). By experimenting with the issue myself, I can only add that it does not seem to be necessary for the two actual sites (the "blue" and "green" ones) to be attached to different IPs. I am running this solution on a single machine with a single IP and it works great.
+While the bg-deploy script does not assume anything about how the target IIS sites are managed, typically it will be used in conjunction with Application Request Routing (ARR) and Server Farms features of IIS and the following text assumes this scenario. For a description of how the IIS may be set up, see e.g. [this StackOverflow answer](http://serverfault.com/questions/124274/zero-downtime-uploads-rollback-in-iis/126379). By experimenting with the issue myself, I can only add that it is not necessary for the two actual sites (the "blue" and "green" ones) to be attached to different IPs. I am running this solution on a single machine with a single IP address and it works great.
 
 ## Prerequisities
 
