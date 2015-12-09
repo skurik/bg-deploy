@@ -121,4 +121,4 @@ If the script finishes successfully, the target site will be updated, without an
 
 ## Troubleshooting
 
-Make sure that when instructing a system to run the above command line, the working directory should be set to the one where `deploy.csx` resides.
+Make sure that when running the command line above, the working directory is set to the one where `deploy.csx` resides.
